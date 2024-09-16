@@ -13,11 +13,11 @@ import AddImage4 from "../../assets/img/add/4.jpg";
 export default function Services() {
   return (
     <Wrapper id="services">
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      {/* <div className="lightBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
         </div>
-      </div>
+      </div> */}
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
@@ -73,10 +73,10 @@ export default function Services() {
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton title="Get Started"/>
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton title="Contact Us" border />
                   </div>
                 </ButtonsRow>
               </AddLeft>

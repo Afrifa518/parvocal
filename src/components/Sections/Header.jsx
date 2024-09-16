@@ -29,11 +29,11 @@ export default function Header() {
               <QuotesIcon />
             </QuotesWrapper>
             <div>
-              <p className="font15 whiteColor">
+              <p className="font15">
                 <em>Our commitment to excellence has earned us the trust of brands across diverse industries,
                    all looking to build stronger, more authentic connections with their audience.</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Micheal Kpodo</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}><b>Micheal Kpodo</b></p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>

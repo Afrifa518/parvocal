@@ -4,6 +4,7 @@ import styled from "styled-components";
 import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Buttons/FullButton";
 import TestimonialSlider from "../Elements/TestimonialSlider";
+import { Link } from "react-scroll";
 
 export default function Blog() {
   return (
@@ -11,86 +12,52 @@ export default function Blog() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Blog Stories</h1>
+            <h1 className="font40 extraBold">
+              Who We Are: Your Trusted PR Partner
+            </h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Parvocal is more than a public relations firm—we are your<br/>
+              strategic partner in building authentic, purpose-driven
+              communication. Our team is driven by a shared belief that<br/>
+              transparency, strategy, and impact are the keys to connecting
+              brands with their audiences. We work closely with each client,<br/>
+              taking the time to understand their unique challenges and
+              objectives. Whether you’re launching a new product or managing a<br/>
+              brand crisis, we offer the insight and expertise to help you
+              navigate the complexities of modern communication.
             </p>
+            <p className="font13" style={{ marginTop:'30px' }}>
+              Our commitment
+              to excellence has earned us the trust of brands across diverse
+              industries, all looking to build stronger, more authentic<br/>
+              connections with their audience.
+            </p>  
+              
+            
           </HeaderInfo>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-          </div>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="New Office!"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                tag="company"
-                author="Luke Skywalker, 2 days ago"
-                action={() => alert("clicked")}
-              />
-            </div>
-          </div>
+          <div className="row textCenter"></div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px", cursor: "pointer" }}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="lightBg" style={{padding: '50px 0'}}>
+      <div className="lightBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">What They Say?</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            Hear directly from the brands that have experienced the impact of Parvocal’s strategic PR solutions.
             </p>
           </HeaderInfo>
           <TestimonialSlider />

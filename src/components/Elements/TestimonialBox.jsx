@@ -3,17 +3,20 @@ import styled from "styled-components";
 // Assets
 import QuoteIcon from "../../assets/svg/Quotes";
 
-export default function TestimonialBox({ text, author }) {
+export default function TestimonialBox({ text, author, brand }) {
   return (
     <Wrapper className="darkBg radius8 flexNullCenter flexColumn">
       <QuoteWrapper>
         <QuoteIcon />
       </QuoteWrapper>
-      <p className="whiteColor font13" style={{ paddingBottom: "30px" }}>
+      <p className="font13" style={{ paddingBottom: "30px" }}>
         {text}
       </p>
-      <p className="orangeColor font13" style={{alignSelf: 'flex-end'}}>
-        <em>{author}</em>
+      <p className="bluDs font13" style={{alignSelf: 'flex-end'}}>
+        <em><b>{author}</b></em>
+      </p>
+      <p className="font13" style={{alignSelf: 'flex-end'}}>
+        {brand}
       </p>
     </Wrapper>
   );

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
-import logoIcon from "../../assets/img/logggo.jpg";
+import logoIcon from "../../assets/img/logggo-removebg-preview.png";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
 export default function TopNavbar() {
@@ -27,10 +27,6 @@ export default function TopNavbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            {/* <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              parvocal
-            </h1> */}
             <img 
               src={logoIcon}
               style={{ height: 130, width: 140}}

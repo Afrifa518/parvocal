@@ -244,9 +244,12 @@
   .whiteColor {
     color: #fff;
   }
+  .bluDs {
+    color: #00072d
+  }
   /* BACKGROUNDS */
   .darkBg {
-    background-color: #0B093B;
+    background-color: #e3f2fd;
   }
   .purpleBg {
     background-color: #7620FF;
